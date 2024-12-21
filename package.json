@@ -1,0 +1,29 @@
+{
+  "name": "portfolio24",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@unocss/extractor-pug": "^0.65.2",
+    "@vicons/ionicons5": "^0.13.0",
+    "@volar/vue-language-plugin-pug": "^1.6.5",
+    "naive-ui": "^2.40.4",
+    "primevue": "^4.2.5",
+    "pug": "^3.0.3",
+    "unocss": "^0.65.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3",
+    "vue-tsc": "^2.1.10"
+  }
+}
