@@ -40,6 +40,73 @@ h1 {
   line-height: 1;
 }
 
+h2 {
+  color: #c9c5cb;
+  font-family: "Bebas Neue", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+h2:hover {
+  color: #b48eae;
+}
+
+h3 {
+  font-family: "Bebas Neue", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.tech-container {
+  background-color: #c9c5cb;
+  color: #ffffff;
+}
+
+.work-container {
+  background-color: #c9c5cb;
+  color: #ffffff;
+}
+
+.work-container:hover {
+  background-color: #b48eae;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
+
+/* Cursor */
+.cursor{
+  position: relative;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  /* font-size: 30px; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
