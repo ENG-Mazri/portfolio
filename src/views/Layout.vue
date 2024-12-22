@@ -1,5 +1,5 @@
 <template lang="pug">
-.flex.gap-3.w-full.m-0.px-5.pt-5.pb-10.rounded-md.shadow-lg.bg-violet-50.box-content.items-center
+.flex.gap-3.px-5.pt-1.pb-10.rounded-md.shadow-lg.bg-violet-50.box-content.items-center.max-w-250
     .flex.flex-col.m-0.p-0.justify-center
         n-button(quaternary circle @click="openLinkedin")
             template( #icon )

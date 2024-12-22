@@ -8,6 +8,7 @@
   color-scheme: light dark;
   color: #646e68;
   background-color: #d7d9d7;
+  height: 100%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,24 +26,29 @@ a:hover {
 }
 
 body {
-  align-content: center !important;
-  place-content: center !important;
+  /* align-content: center !important;
+  place-content: center !important; */
   margin: auto;
-  /* max-width: max-content;
-  max-height: max-content; */
+  max-width: max-content;
+  max-height: max-content;
   place-items: center;
   display: flex;
+  flex-wrap: wrap;
+  height: 100%;
   /* margin: 0;
   min-width: 320px;
   min-height: 100vh; */
 }
 
 #app {
-  max-width: 1280px;
-  /* margin: auto; */
-  /* padding: 2rem; */
+  /* max-width: 1280px; */
+  margin: 5% auto;
+  /* padding: 15vh; */
   text-align: center;
   /* box-sizing: border-box; */
+  /* align-content: center !important;
+  place-content: center !important;
+  place-items: center; */
 
 }
 
