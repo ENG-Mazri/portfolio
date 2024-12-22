@@ -1,11 +1,11 @@
 <template lang="pug">
 Layout
-    .flex.justify-evenly.items-center.w-full.gap-10.duration-1500( v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }")
+    .flex.flex-wrap.justify-evenly.items-center.w-full.gap-10.select-none.duration-1500( v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }")
         .flex.flex-col.max-w-200
             h1.drop-shadow-2xl.m-0 Mazri Abderrahmane
             p.max-w-100.px-10 I'm a highly motivated software developer with a passion for creating elegant and user-friendly solutions. I enjoy collaborating with cross-functional teams to achieve project goals.
 
-        img.w-70.rounded-full(class="img" src="../assets/img.png")
+        img.max-w-70.rounded-full(class="img" src="../assets/img.png")
 
 
 

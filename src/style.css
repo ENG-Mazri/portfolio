@@ -25,11 +25,25 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
+  align-content: center !important;
+  place-content: center !important;
+  margin: auto;
+  /* max-width: max-content;
+  max-height: max-content; */
   place-items: center;
+  display: flex;
+  /* margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
+}
+
+#app {
+  max-width: 1280px;
+  /* margin: auto; */
+  /* padding: 2rem; */
+  text-align: center;
+  /* box-sizing: border-box; */
+
 }
 
 h1 {
@@ -131,12 +145,6 @@ button:focus-visible {
   padding: 2em;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
 @media (prefers-color-scheme: light) {
   :root {

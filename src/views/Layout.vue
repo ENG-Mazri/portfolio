@@ -1,41 +1,40 @@
 <template lang="pug">
-.flex.flex-grow.justify-center
-    .flex.gap-3.w-full.m-0.px-5.pt-5.pb-10.rounded-md.shadow-lg.bg-violet-50
-        .flex.flex-col.m-0.p-0.justify-center
-            n-button(quaternary circle @click="openLinkedin")
-                template( #icon )
-                    n-icon
-                        LogoLinkedin
-            n-button(quaternary circle @click="openYoutube")
-                template( #icon )
-                    n-icon
-                        LogoYoutube
-            n-button(quaternary circle @click="openGithub")
-                template( #icon )
-                    n-icon
-                        LogoGithub
+.flex.gap-3.w-full.m-0.px-5.pt-5.pb-10.rounded-md.shadow-lg.bg-violet-50.box-content.items-center
+    .flex.flex-col.m-0.p-0.justify-center
+        n-button(quaternary circle @click="openLinkedin")
+            template( #icon )
+                n-icon
+                    LogoLinkedin
+        n-button(quaternary circle @click="openYoutube")
+            template( #icon )
+                n-icon
+                    LogoYoutube
+        n-button(quaternary circle @click="openGithub")
+            template( #icon )
+                n-icon
+                    LogoGithub
 
-        .flex.flex-col.gap-5.m-0.p-x-10
-            .flex.justify-between.gap-10.m-0
+    .flex.flex-col.w-full.gap-5.m-0.px-5
+        .flex.flex-wrap.w-full.justify-between.gap-1.m-0
+            .flex.gap-1.justify-center.items-center.m-0
+                n-icon
+                    Mail
+                h5.select-none eng.mazri@gmail.com
+
+            .flex.gap-7.items-center.m-0
                 .flex.gap-1.items-center.m-0
                     n-icon
-                        Mail
-                    h5 eng.mazri@gmail.com
-
-                .flex.gap-7.items-center.justify-left.m-0
-                    .flex.gap-1.items-center.m-0
-                        n-icon
-                            Home
-                        h5.cursor-pointer(@click="toHome") Home
-                    .flex.gap-1.items-center.m-0
-                        n-icon
-                            FileTrayFullSharp
-                        h5.cursor-pointer(@click="toWorks") Works
-                    .flex.gap-1.items-center.m-0
-                        n-icon
-                            DocumentText
-                        h5.cursor-pointer(@click="toResume") Resume
-            slot
+                        Home
+                    h5.select-none.cursor-pointer(@click="toHome") Home
+                .flex.gap-1.items-center.m-0
+                    n-icon
+                        FileTrayFullSharp
+                    h5.select-none.cursor-pointer(@click="toWorks") Works
+                .flex.gap-1.items-center.m-0
+                    n-icon
+                        DocumentText
+                    h5.select-none.cursor-pointer(@click="toResume") Resume
+        slot
 
 </template>
 <script lang="ts">

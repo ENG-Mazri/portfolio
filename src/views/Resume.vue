@@ -1,11 +1,11 @@
 <template lang="pug">
 Layout
-    .flex.flex-col.justify-evenly.items-center.gap-5.duration-1500( v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }")
+    .flex.flex-col.justify-evenly.items-center.gap-5.duration-1500.box-content( v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }")
             
-        .flex.flex-col.items-center.gap-7.justify-evenly.mx-10
+        .flex.flex-col.items-center.gap-7.justify-evenly
 
-            .flex.flex-col.gap-5.w-full.tech-container.p-5.rounded-md
-                h3.drop-shadow-2xl.m-0.self-left Tech I use on daily basis
+            .flex.flex-col.gap-5.w-full.tech-container.p-5.rounded-md.select-none
+                h3.drop-shadow-2xl.m-0.self-left.select-none Tech I use on daily basis
                 .flex.flex-wrap.gap-2.w-full.justify-evenly.items-center.rounded-md
                     img.w-10(class="img" src="../assets/html.svg")
                     img.w-10(class="img" src="../assets/css.svg")
@@ -20,8 +20,8 @@ Layout
                     img.w-10(class="img" src="../assets/git.svg")
                     img.w-10(class="img" src="../assets/vscode.svg")
 
-            .flex.flex-col.gap-5.w-full.tech-container.p-5.rounded-md
-                h3.drop-shadow-2xl.m-0.self-left Tech I happen to use
+            .flex.flex-col.gap-5.w-full.tech-container.p-5.rounded-md.select-none
+                h3.drop-shadow-2xl.m-0.self-left.select-none Tech I happen to use
                 .flex.flex-wrap.gap-2.w-full.justify-evenly.items-center.rounded-md
                     img.w-10(class="img" src="../assets/nuxt.svg")
                     img.w-10(class="img" src="../assets/react.svg")
@@ -41,7 +41,7 @@ Layout
 
         .flex.gap-5.items-center
             //- Vue3Lottie(ref="finished" :animationData="downloadJSON" :height="100" :width="100" :loop="true" :auto-play="true")
-            h2.cursor-pointer Download resume
+            h2.select-none.cursor-pointer(@click="downloadResume") Download resume
             //- n-button(quaternary @click="downloadResume") Download resume
             //-     template( #icon )
             //-         n-icon
@@ -64,9 +64,10 @@ export default defineComponent({
     mounted(){
     },
     methods:{
-        downloadResume(){
-
-        }
+        async downloadResume(){
+            const file = await fetch('/Mazri_Abderrahmane_CV_2024.pdf');
+            window.open(file.url, '_blank');
+        },
     }
 })
 </script>
