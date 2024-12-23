@@ -66,7 +66,14 @@ export default defineComponent({
     methods:{
         async downloadResume(){
             const file = await fetch('/Mazri_Abderrahmane_CV_2024.pdf');
-            window.open(file.url, '_blank');
+            const link = document.createElement('a');
+            link.href = file.url;
+            link.target = '_blank';
+            link.download = 'Mazri_Abderrahmane_CV_2024.pdf';
+            console.log(file);
+            link.click();
+            link.remove();
+            // window.open(file.url, '_blank');
         },
     }
 })
