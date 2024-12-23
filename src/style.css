@@ -70,7 +70,7 @@ h2 {
 }
 
 h2:hover {
-  color: #b48eae;
+  color: #718eaf;
 }
 
 h3 {
@@ -92,7 +92,11 @@ h3 {
 }
 
 .work-container:hover {
-  background-color: #b48eae;
+  /* background-color: #b48eae; */
+  /* background-color: #d1c481; */
+  /* background-color: #929673; */
+  /* background-color: #d66536; */
+  background-color: #718eaf;
 }
 
 /* @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); */
