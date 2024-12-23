@@ -158,7 +158,7 @@ button:focus-visible {
     /* bottom: 0 !important; */
     width: 100vw !important; 
     /* height: 100vh !important; */
-    padding: 3% 0;
+    /* padding: 3% 0; */
     box-shadow: 0 0 #0000;
   }
 }
