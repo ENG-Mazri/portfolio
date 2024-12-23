@@ -10,7 +10,7 @@ Layout
                 :highlight-style="{ color: '#646e68', background: 'none', 'font-weight': 'bold'}"
             )
 
-        img.max-w-70.rounded-full(class="img" src="../assets/img.png")
+        img.max-w-40.rounded-full(class="img sm:max-w-70" src="../assets/img.png")
 
 
 
