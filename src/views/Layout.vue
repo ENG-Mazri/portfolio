@@ -15,25 +15,25 @@
                     LogoGithub
 
     .flex.flex-col.w-full.gap-5.m-0.px-5
-        .flex.flex-wrap.w-full.justify-between.gap-1.m-0
-            .flex.gap-1.justify-center.items-center.m-0
+        .flex.flex-wrap.w-full.justify-between.gap-1.m-0.select-none
+            .flex.flex-grow.gap-1.justify-center.items-center.m-1(class="sm:flex-none")
                 n-icon
                     Mail
-                h5.select-none eng.mazri@gmail.com
+                h5.m-0 eng.mazri@gmail.com
 
-            .flex.gap-7.items-center.m-0
-                .flex.gap-1.items-center.m-0
+            .flex.flex-grow.gap-7.items-center.m-1(class="sm:flex-none")
+                .flex.flex-grow.gap-1.items-center.m-0(class="sm:flex-none")
                     n-icon
                         Home
-                    h5.select-none.cursor-pointer(@click="toHome") Home
-                .flex.gap-1.items-center.m-0
+                    h5.m-0.cursor-pointer(@click="toHome") Home
+                .flex.flex-grow.gap-1.items-center.m-0(class="sm:flex-none")
                     n-icon
                         FileTrayFullSharp
-                    h5.select-none.cursor-pointer(@click="toWorks") Works
-                .flex.gap-1.items-center.m-0
+                    h5.m-0.cursor-pointer(@click="toWorks") Works
+                .flex.flex-grow.gap-1.items-center.m-0(class="sm:flex-none")
                     n-icon
                         DocumentText
-                    h5.select-none.cursor-pointer(@click="toResume") Resume
+                    h5.m-0.cursor-pointer(@click="toResume") Resume
         slot
 
 </template>
