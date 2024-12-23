@@ -4,7 +4,7 @@ Layout
         .flex.flex-col.max-w-200
             h1.drop-shadow-2xl.m-0 Mazri Abderrahmane
             //- p.max-w-100.px-10 I'm a highly motivated software developer with a passion for creating elegant and user-friendly solutions. I enjoy collaborating with cross-functional teams to achieve project goals.
-            n-highlight.max-w-100.px-10(
+            n-highlight.max-w-100.px-8(
                 :text="text"
                 :patterns="patterns"
                 :highlight-style="{ color: '#646e68', background: 'none', 'font-weight': 'bold'}"

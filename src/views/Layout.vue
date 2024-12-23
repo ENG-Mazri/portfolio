@@ -1,5 +1,5 @@
 <template lang="pug">
-.flex.gap-3.px-5.pt-1.pb-10.rounded-md.shadow-lg.bg-violet-50.box-content.items-center.max-w-250
+#layout.flex.gap-1.px-5.pt-1.pb-10.rounded-md.shadow-lg.bg-violet-50.box-content.items-center.max-w-250
     .flex.flex-col.m-0.p-0.justify-center
         n-button(quaternary circle @click="openLinkedin")
             template( #icon )
@@ -15,7 +15,7 @@
                     LogoGithub
 
     .flex.flex-col.w-full.gap-5.m-0.px-5
-        .flex.flex-wrap.w-full.justify-between.gap-1.m-0.select-none
+        .flex.flex-wrap.w-full.justify-between.gap-1.m-0.select-none.pt-3
             .flex.flex-grow.gap-1.justify-center.items-center.m-1(class="sm:flex-none")
                 n-icon
                     Mail

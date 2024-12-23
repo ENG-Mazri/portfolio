@@ -1,6 +1,6 @@
 <template lang="pug">
 Layout
-    .flex.flex-wrap.justify-evenly.items-center.gap-5.box-content
+    .flex.flex-wrap.justify-evenly.items-center.gap-10.select-none
         .flex.flex-col.work-container.h-75.w-70.p-5.rounded-md.cursor-pointer.duration-1500( v-animateonscroll="{ enterClass: 'fadein', leaveClass: 'fadeout' }" @click="toBimBlox")
             h1.drop-shadow-2xl.m-0 bim blox.
             p.max-w-100.px-10 bim blox is an advanced platform designed to facilitate comprehensive IFC file management.
